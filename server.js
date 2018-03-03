@@ -5,8 +5,74 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleOne = {
+    title: 'Article One|CB Sahoo',
+    heading: 'Article One',
+    date: 'March 2,2018',
+    ocntent: ` <p>
+                It is a period of civil war.
+                Rebel spaceships, striking
+                from a hidden base, have won
+                their first victory against
+                the evil Galactic Empire.
+            </p>
+            <p>
+                During the battle, Rebel
+                spies managed to steal secret
+                plans to the Empire's
+                ultimate weapon, the DEATH
+                STAR, an armored space
+                station with enough power to
+                destroy an entire planet.
+                </p>
+                <p>
+                Pursued by the Empire's
+                sinister agents, Princess
+                Leia races home aboard her
+                starship, custodian of the
+                stolen plans that can save
+                her people and restore
+                freedom to the galaxy..... 
+
+            </p>`
+};
+
+function createTemplate(data){
+    var title = data.title;
+    var date = data.date;
+    var heading = data.heading;
+    var content = data.content;
+    
+var htmlTemplate = `<html>
+<head>
+    <title>
+      ${title}
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link href="/ui/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+    <a href='/'>Home</a>
+    <hr/>
+    <h3>
+        ${heading}
+    </h3>
+
+    <div>
+       ${date}
+    </div>
+    <div>
+       ${content}
+    </div>
+    </div>
+</body>
+</html>
+`;
+return htmlTemplate;
+}
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.send(createTemplate(articleOne));
 });
 
 app.get('/article-one',function(req,res){
