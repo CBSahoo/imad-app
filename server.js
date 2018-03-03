@@ -9,7 +9,7 @@ var articleOne = {
     title: 'Article One|CB Sahoo',
     heading: 'Article One',
     date: 'March 2,2018',
-    ocntent: ` <p>
+    content: ` <p>
                 It is a period of civil war.
                 Rebel spaceships, striking
                 from a hidden base, have won
