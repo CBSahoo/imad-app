@@ -101,8 +101,6 @@ var htmlTemplate = `<html>
     <link href="/ui/style.css" rel="stylesheet" />
 </head>
 <body>
-    <a href='/'>Home</a>
-    <hr/>
     <div class="container">
     <a href='/'>Home</a>
     <hr/>
