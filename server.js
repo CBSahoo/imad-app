@@ -36,7 +36,7 @@ var articles = {
                 freedom to the galaxy..... 
 
             </p>`},
-    'article-two':{
+ 'article-two':{
      title: 'Article Two|CB Sahoo',
     heading: 'Article Two',
     date: 'March 12,2018',
@@ -62,7 +62,7 @@ var articles = {
     heading: 'Article Three',
     date: 'March 17,2018',
     content: ` <p>  
-                    Luke Skywalker has returned to
+                Luke Skywalker has returned to
                 his home planet of Tatooine in
                 an attempt to rescue his
                 friend Han Solo from the
@@ -126,7 +126,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articleName',function(req,res){
-     var articleName = req.param.articleName;
+     var articleName = req.params.articleName;
      res.send(createTemplate(articles[articleName]));
 });
 
