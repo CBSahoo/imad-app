@@ -58,9 +58,9 @@ var articles = {
              the far reaches of space....
             </p>`},
  articleThree:{ 
-    title: 'Article Two|CB Sahoo',
-    heading: 'Article Two',
-    date: 'March 12,2018',
+    title: 'Article Three|CB Sahoo',
+    heading: 'Article Three',
+    date: 'March 17,2018',
     content: ` <p>  
                     Luke Skywalker has returned to
                 his home planet of Tatooine in
