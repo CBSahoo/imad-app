@@ -36,7 +36,7 @@ var articles = {
                 freedom to the galaxy..... 
 
             </p>`},
- 'article-two':{
+    'article-two':{
      title: 'Article Two|CB Sahoo',
     heading: 'Article Two',
     date: 'March 12,2018',
