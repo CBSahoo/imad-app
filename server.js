@@ -111,7 +111,9 @@ var htmlTemplate = `<html>
 </head>
 <body>
     <div class="container">
+    <button>
     <a href='/'>Home</a>
+    </button>
     <hr/>
     <h3>
         ${heading}
