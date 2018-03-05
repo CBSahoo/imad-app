@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles = {
+ articleOne : {
     title: 'Article One|CB Sahoo',
     heading: 'Article One',
     date: 'March 2,2018',
@@ -34,7 +35,56 @@ var articleOne = {
                 her people and restore
                 freedom to the galaxy..... 
 
-            </p>`
+            </p>`},
+ articleTwo:{
+     title: 'Article Two|CB Sahoo',
+    heading: 'Article Two',
+    date: 'March 12,2018',
+    content: ` <p>
+               It is a dark time for the
+               Rebellion. Although the Death
+               Star has been destroyed,
+               Imperial troops have driven the
+               Rebel forces from their hidden
+               base and pursued them across
+               the galaxy.
+               </p>
+             
+               <p>
+             The evil lord Darth Vader,
+             obsessed with finding young
+             Skywalker, has dispatched
+             thousands of remote probes into
+             the far reaches of space....
+            </p>`},
+ articleThree:{ 
+    title: 'Article Two|CB Sahoo',
+    heading: 'Article Two',
+    date: 'March 12,2018',
+    content: ` <p>  
+                    Luke Skywalker has returned to
+                his home planet of Tatooine in
+                an attempt to rescue his
+                friend Han Solo from the
+                clutches of the vile gangster
+                Jabba the Hutt.
+                </p>
+                <p>
+                Little does Luke know that the
+                GALACTIC EMPIRE has secretly
+                begun construction on a new
+                armored space station even
+                more powerful than the first
+                dreaded Death Star.
+                </p>
+                <p>
+                When completed, this ultimate
+                weapon will spell certain doom
+                for the small band of rebels
+                struggling to restore freedom
+                to the galaxy...</p>`
+    
+    }
 };
 
 function createTemplate(data){
