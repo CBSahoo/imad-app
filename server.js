@@ -83,7 +83,6 @@ var articles = {
                 for the small band of rebels
                 struggling to restore freedom
                 to the galaxy...</p>`
-    
     }
 };
 
