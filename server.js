@@ -170,7 +170,7 @@ app.get('/submit-name',function(req,res){
    names.push(name);
    res.send(JSON.stringify(names));
 });
-var pool = new Pool(config);
+/*var pool = new Pool(config);
 app.get('/:articles/:articleName',function(req,res){
      pool.query("SELECT * FROM article WHERE title = '"+ req.params.articleName +"'", function(err,result){
          if(err){
@@ -185,7 +185,7 @@ app.get('/:articles/:articleName',function(req,res){
          }
      });
 });
-
+*/
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
