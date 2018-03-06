@@ -146,6 +146,7 @@ app.get('/ui/main.js', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'main.js')); 
 });
 
+var pool = new Pool(config);
 app.get('/test-db',function(req,res){
     //make a select request
     //return a response with the results
@@ -170,7 +171,7 @@ app.get('/submit-name',function(req,res){
    names.push(name);
    res.send(JSON.stringify(names));
 });
-/*var pool = new Pool(config);
+/*
 app.get('/:articles/:articleName',function(req,res){
      pool.query("SELECT * FROM article WHERE title = '"+ req.params.articleName +"'", function(err,result){
          if(err){
@@ -185,8 +186,8 @@ app.get('/:articles/:articleName',function(req,res){
          }
      });
 });
-*/
 
+*/
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
