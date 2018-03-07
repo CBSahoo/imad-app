@@ -16,8 +16,6 @@
     }else if (request.status === 500){
         alert('Something went wrong in server');
     }
-    var ul = document.getElementById('namelist');
-    ul.innerHTML = list;        
     }
     //Not done yet
     };
